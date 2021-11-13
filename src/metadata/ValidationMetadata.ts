@@ -9,6 +9,7 @@ export class ValidationMetadata {
   // Properties
   // -------------------------------------------------------------------------
 
+  name?: string;
   /**
    * Validation type.
    */
@@ -69,6 +70,7 @@ export class ValidationMetadata {
   // -------------------------------------------------------------------------
 
   constructor(args: ValidationMetadataArgs) {
+    this.name = args.name;
     this.type = args.type;
     this.target = args.target;
     this.propertyName = args.propertyName;

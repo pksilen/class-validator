@@ -4,6 +4,7 @@ import { ValidationOptions } from '../decorator/ValidationOptions';
  * Constructor arguments for ValidationMetadata class.
  */
 export interface ValidationMetadataArgs {
+  name?: string;
   /**
    * Validation type.
    */
